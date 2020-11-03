@@ -1,0 +1,15 @@
+.header {
+  background: black;
+  color: #fafafa;
+  &__title {
+    text-align: center;
+  }
+}
+
+.hero {
+  max-width: 600px;
+  margin: 0 auto;
+  &__img {
+    width: 100%;
+  }
+}
