@@ -1,14 +1,52 @@
-import React, { useState } from "react"
+import React from 'react'
+import { graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
-export default function home() {
+export default function home({ data }) {
   return (
     <div>
       <header className="header">
         <h1 className="header__title">タイトル</h1>
       </header>
       <section className="hero">
-        <img src="/images/pic1.jpg" alt="hero" className="hero__img"></img>
+        <Img fluid={data.pic1.childImageSharp.fluid} />
+        <Img fluid={data.pic2.childImageSharp.fluid} />
+        <Img fluid={data.pic3.childImageSharp.fluid} />
+        <Img fluid={data.pic4.childImageSharp.fluid} />
       </section>
     </div>
   )
 }
+
+export const query = graphql`
+  query MyQuery {
+    pic1: file(relativePath: { eq: "pic1.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1980) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    pic2: file(relativePath: { eq: "pic2.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1980) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    pic3: file(relativePath: { eq: "pic3.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1980) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    pic4: file(relativePath: { eq: "pic4.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1980) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+`
