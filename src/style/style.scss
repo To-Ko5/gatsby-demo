@@ -54,3 +54,12 @@ body {
     width: 100%;
   }
 }
+
+.footer {
+  background: black;
+  color: #fafafa;
+  padding: 16px;
+  &__title {
+    text-align: center;
+  }
+}

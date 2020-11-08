@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 export default function home({ data }) {
   return (
@@ -14,6 +15,7 @@ export default function home({ data }) {
         <Img fluid={data.pic3.childImageSharp.fluid} />
         <Img fluid={data.pic4.childImageSharp.fluid} />
       </section>
+      <Footer />
     </div>
   )
 }
