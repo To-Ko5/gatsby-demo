@@ -2,12 +2,12 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
+import Header from '../components/Header'
+
 export default function home({ data }) {
   return (
     <div>
-      <header className="header">
-        <h1 className="header__title">タイトル</h1>
-      </header>
+      <Header />
       <section className="hero">
         <Img fluid={data.pic1.childImageSharp.fluid} />
         <Img fluid={data.pic2.childImageSharp.fluid} />
