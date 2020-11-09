@@ -1,9 +1,11 @@
 import React from 'react'
 
+const localStyle = require('../style/header.module.scss')
+
 export default function Header() {
   return (
-    <header className="header">
-      <h1 className="header__title">タイトル</h1>
+    <header className={`${localStyle.header}`}>
+      <h1 className={`${localStyle.header__title}`}>タイトル</h1>
     </header>
   )
 }

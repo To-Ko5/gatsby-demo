@@ -2,21 +2,18 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
-import Header from '../components/Header'
-import Footer from '../components/Footer'
+import Layouts from '../components/Layouts'
 
 export default function home({ data }) {
   return (
-    <div>
-      <Header />
+    <Layouts>
       <section className="hero">
         <Img fluid={data.pic1.childImageSharp.fluid} />
         <Img fluid={data.pic2.childImageSharp.fluid} />
         <Img fluid={data.pic3.childImageSharp.fluid} />
         <Img fluid={data.pic4.childImageSharp.fluid} />
       </section>
-      <Footer />
-    </div>
+    </Layouts>
   )
 }
 

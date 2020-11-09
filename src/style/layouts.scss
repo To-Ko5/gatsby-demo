@@ -37,29 +37,3 @@ body {
   font-family: '游ゴシック', YuGothic, 'Hiragino Kaku Gothic ProN', Meiryo,
     sans-serif;
 }
-
-.header {
-  background: black;
-  color: #fafafa;
-  padding: 16px;
-  &__title {
-    text-align: center;
-  }
-}
-
-.hero {
-  max-width: 1980px;
-  margin: 0 auto;
-  &__img {
-    width: 100%;
-  }
-}
-
-.footer {
-  background: black;
-  color: #fafafa;
-  padding: 16px;
-  &__title {
-    text-align: center;
-  }
-}
