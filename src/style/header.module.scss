@@ -2,8 +2,11 @@
   background: black;
   color: #fafafa;
   padding: 16px;
+  display: flex;
+  align-items: center;
   &__title {
     text-align: center;
+    margin-right: 50px;
   }
 }
 
