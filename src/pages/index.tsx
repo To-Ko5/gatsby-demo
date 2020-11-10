@@ -3,10 +3,12 @@ import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 import Layouts from '../components/Layouts'
+import Seo from '../components/Seo'
 
 export default function home({ data }) {
   return (
     <Layouts>
+      <Seo />
       <section className="hero">
         <Img fluid={data.pic1.childImageSharp.fluid} />
         <Img fluid={data.pic2.childImageSharp.fluid} />
