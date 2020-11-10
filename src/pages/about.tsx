@@ -3,10 +3,12 @@ import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
 import Layouts from '../components/Layouts'
+import Seo from '../components/Seo'
 
 export default function about({ data }) {
   return (
     <Layouts>
+      <Seo />
       <p>about</p>
       <figure>
         <Img fluid={data.pic4.childImageSharp.fluid}></Img>

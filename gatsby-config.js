@@ -6,6 +6,11 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: 'gatsby-demo',
+    description: 'gatsby-demo-site',
+    lang: 'ja'
+  },
   plugins: [
     'gatsby-plugin-sass',
     'gatsby-transformer-sharp',
