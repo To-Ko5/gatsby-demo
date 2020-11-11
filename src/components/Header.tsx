@@ -17,6 +17,16 @@ export default function Header() {
               about
             </Link>
           </li>
+          <li className={`${localStyle.gnav__list}`}>
+            <Link to={`/work`} className={`${localStyle.gnav__link}`}>
+              work
+            </Link>
+          </li>
+          <li className={`${localStyle.gnav__list}`}>
+            <Link to={`/contact`} className={`${localStyle.gnav__link}`}>
+              contact
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>

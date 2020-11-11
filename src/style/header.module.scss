@@ -10,6 +10,14 @@
   }
 }
 
+.gnav {
+  display: flex;
+  justify-content: space-around;
+  &__list {
+    margin-right: 24px;
+  }
+}
+
 .hero {
   max-width: 1980px;
   margin: 0 auto;
