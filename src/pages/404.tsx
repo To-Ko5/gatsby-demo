@@ -7,7 +7,7 @@ import Seo from '../components/Seo'
 export default function about({ data }) {
   return (
     <Layouts>
-      <Seo />
+      <Seo pageTitle="ページが見つかりません" />
       <p>お探しのページは見つかりません</p>
     </Layouts>
   )

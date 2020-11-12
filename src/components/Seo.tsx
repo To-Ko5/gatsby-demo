@@ -2,7 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
-export default () => {
+export default (props) => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -15,11 +15,15 @@ export default () => {
     }
   `)
 
+  const title = props.pageTitle
+    ? `${props.pageTitle}|${data.site.siteMetadata.title}`
+    : data.site.siteMetadata.title
+  const description = props.pageDesc || data.site.siteMetadata.description
   return (
     <Helmet>
       <html lang={data.site.siteMetadata.lang} />
-      <title>{data.site.siteMetadata.title}</title>
-      <meta name="description" content={data.site.siteMetadata.description} />
+      <title>{title}</title>
+      <meta name="description" content={description} />
     </Helmet>
   )
 }
